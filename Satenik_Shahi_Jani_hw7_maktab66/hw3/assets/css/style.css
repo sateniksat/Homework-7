@@ -1,0 +1,207 @@
+body{
+    background-color: black;
+    color: white;
+}
+p,h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.menu{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(39, 36, 36);
+    border-radius: 0 0 0 40px;
+    display: flex;
+    padding:2% 2% 1% 2%;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    display: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.lines{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.line1{
+    width: 25px;
+    height: 3px;
+    background: linear-gradient(to right,
+    orange,white);
+    display: flex;
+    border-radius: 25px;
+}
+.line2{
+    margin-top: 20%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,
+    orange,white);
+    border-radius: 25px;
+}
+.line3{
+    margin-top: 20%;
+    width: 25px;
+    height: 3px;
+    background: linear-gradient(to right,
+    orange,white);
+    margin-left: 2%;
+    border-radius: 25px;
+    align-self: flex-end;
+}
+.container-big{
+    margin: 0;
+    padding: 0;
+}
+.big {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10% 15% 15% 15%;
+  align-items: center;
+}
+.image {
+    flex-basis: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.image img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 wheat;
+}
+.hello {
+    flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.head img{
+    width: 10%;
+    margin: 2%;
+}
+p{
+    font-size: larger;
+}
+h1{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.trio{
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 1%;
+}
+.head h1{
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    flex-basis: 30%;
+    margin:8% 8% 8% 2%;
+}
+.card div{
+    display: flex;
+    align-content: center;
+}
+.icon1 img{
+    width: 8%;
+    padding: 2%;
+}
+.icon2 img{
+    width: 15%;
+}
+.icon3 img{
+    width: 10%;
+}
+.container h2{
+    background: linear-gradient(to right,
+    tomato,purple);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+hr{
+    width: 70%;
+    border: 0;
+    height: 1px;
+    background:linear-gradient(to right,
+    tomato,purple); 
+}
+.hr2{
+    display: none;
+}
+@media (max-width: 992px) { 
+    .big{
+        flex-direction: column;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: 2%;
+    }
+    .menu{
+        display: unset;
+    }
+    .hr2{
+        display: unset;
+        margin-bottom: 3%;
+    }
+}
+@media (max-width: 768px) {  
+    .big{
+        flex-direction: column;
+    }
+    .container-big{
+        position: relative;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .head{
+        justify-content: center;
+    }
+    .hr1{
+        display: none;
+    }
+    .hr2{
+        display: unset;
+        margin-bottom: 3%;
+    }
+    .card{
+        width: 75%;
+    }
+    .head img{
+        width: 15%;
+    }
+}
+
+
